@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context="com.example.user.dse.Eachitem"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+        android:id="@+id/watchlist"
+        android:onClick="watchlist"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+            android:layout_gravity="left"
+        android:background="@drawable/button_border"
+        android:text="ADD TO WATCHLIST"
+        android:textColor="#64FFDA"
+        />
+    <Button
+        android:id="@+id/portfolio"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_border2"
+        android:text="ADD TO PORTFOLIO"
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#00BFA5"
+        android:id="@+id/name"
+        android:text="Bank"
+        android:layout_marginTop="5dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Item:"
+            android:textColor="#00BFA5"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item"
+            android:textColor="#00BFA5"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="15sp"
+            android:textColor="#00BFA5"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sector:"
+            android:textColor="#00BFA5"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/sector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sector"
+            android:textSize="15sp"
+            android:textColor="#00BFA5"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/price_alert"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:text="ADD TO PRICE ALERT"
+            android:layout_gravity="left"
+            android:textColor="#64FFDA"
+            />
+        <Button
+            android:id="@+id/market"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border2"
+            android:text="MARKET DEPT"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/news"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/button_border"
+            android:text="NEWS ARCHIVE"
+            android:textColor="#64FFDA"
+            />
+        <Button
+            android:id="@+id/graph"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_border2"
+            android:text="GRAPH"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#424242"
+        >
+
+        <TextView
+            android:id="@+id/getltp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="ltp"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/getvol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="volume"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/getchng"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="chng"
+            android:textColor="#fff"
+            android:background="#43A047"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:gravity="right"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
