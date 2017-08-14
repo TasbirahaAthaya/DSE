@@ -29,11 +29,11 @@ public class Watchlist extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        MyDataBaseHelper mydb = new MyDataBaseHelper(this);
+        MyDBQuery mydb = new MyDBQuery(this);
         mylist=(ListView)findViewById(R.id.watch);
-        //mydb.open();
-        w = mydb.getAllDataFromTable();
-       // employeeOps.close();
+        mydb.open();
+        w = mydb.getAll();
+        mydb.close();
         ArrayAdapter<WatchlistTemplate> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, w);
         mylist.setAdapter(adapter);

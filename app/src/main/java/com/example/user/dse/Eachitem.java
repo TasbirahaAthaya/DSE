@@ -65,9 +65,14 @@ public class Eachitem extends AppCompatActivity {
 
             //commits your edits
             editor.commit();*/
+            WatchlistTemplate wt= new WatchlistTemplate();
+            wt.setW_sym(passsym);
+            wt.setW_ltp(passltp);
+            wt.setW_vol(passvolume);
+            wt.setW_chng(passchng);
 
-            final MyDataBaseHelper obj = new MyDataBaseHelper(getApplicationContext());
-            obj.addNew(new WatchlistTemplate(passsym,passltp,passvolume,passchng));
+            MyDBQuery obj = new MyDBQuery(getApplicationContext());
+            obj.addNew(wt);
 
 
         }

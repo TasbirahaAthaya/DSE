@@ -7,7 +7,7 @@ public class WatchlistTemplate {
 
     // variables
 
-    int w_id;
+    long w_id;
     String w_sym;
     String w_ltp;
     String w_vol;
@@ -19,7 +19,7 @@ public class WatchlistTemplate {
 
 
     // constructor 
-    public WatchlistTemplate(int id, String sym,String ltp,String vol,String chng){
+    public WatchlistTemplate(long id, String sym,String ltp,String vol,String chng){
 
         this.w_id = id;
         this.w_sym = sym;
@@ -42,7 +42,7 @@ public class WatchlistTemplate {
     // getter setter
 
 
-    public int getW_id() {
+    public long getW_id() {
         return w_id;
     }
 
@@ -66,7 +66,7 @@ public class WatchlistTemplate {
         this.w_chng = w_chng;
     }
 
-    public void setW_id(int w_id) {
+    public void setW_id(long w_id) {
         this.w_id = w_id;
     }
 
